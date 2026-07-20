@@ -1,0 +1,277 @@
+:root {
+  --burgundy: #7a2331;
+  --burgundy-dark: #5c1a25;
+  --gold: #b8860b;
+  --cream: #fbf6ee;
+  --charcoal: #3a3a3a;
+  --gray: #6b6b6b;
+  --border: #e6ddd0;
+  --bg: #fdfcfa;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--charcoal);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Top bar ---------- */
+.top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--burgundy);
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.brand {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+#search-input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+}
+.grocery-link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  flex-shrink: 0;
+  padding: 2px 4px;
+}
+.badge {
+  display: none;
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  background: var(--gold);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+/* ---------- Layout ---------- */
+main#app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px 16px 60px;
+}
+.view { animation: fadeIn 0.15s ease-in; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.page-title {
+  font-size: 22px;
+  color: var(--burgundy);
+  margin: 8px 0 4px;
+}
+.page-sub {
+  color: var(--gray);
+  font-size: 14px;
+  margin: 0 0 16px;
+}
+.back-link {
+  display: inline-block;
+  color: var(--burgundy);
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.back-link:hover { text-decoration: underline; }
+
+/* ---------- Category cards ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--charcoal);
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px 10px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.category-card:active { transform: scale(0.97); }
+.category-emoji { font-size: 34px; }
+.category-name { font-weight: 700; font-size: 14px; color: var(--burgundy); }
+.category-count { font-size: 12px; color: var(--gray); }
+
+/* ---------- Recipe list & cards ---------- */
+.recipe-list { display: flex; flex-direction: column; gap: 10px; }
+.recipe-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.recipe-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+  min-width: 0;
+}
+.recipe-card-title { font-weight: 700; font-size: 15.5px; color: var(--burgundy); }
+.recipe-card-meta { font-size: 12.5px; color: var(--gray); }
+
+.grocery-toggle {
+  flex-shrink: 0;
+  border: 1px solid var(--gold);
+  background: white;
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 6px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.grocery-toggle.active { background: var(--gold); color: white; }
+.grocery-toggle.big {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 10px;
+  margin: 12px 0 20px;
+}
+
+/* ---------- Recipe detail ---------- */
+.recipe-title { font-size: 24px; margin-bottom: 2px; }
+.source-line { font-size: 12.5px; color: var(--gold); font-style: italic; margin: 0 0 6px; }
+.meta-line { font-size: 13.5px; color: var(--gray); margin: 0 0 4px; }
+
+.section-heading {
+  font-size: 17px;
+  color: var(--burgundy);
+  border-bottom: 2px solid var(--burgundy);
+  padding-bottom: 4px;
+  margin: 22px 0 10px;
+}
+.sub-heading {
+  font-size: 14px;
+  color: var(--burgundy);
+  font-style: italic;
+  font-weight: 700;
+  margin: 14px 0 6px;
+}
+
+.check-list {
+  list-style: none;
+  margin: 0 0 4px;
+  padding: 0;
+}
+.check-list.numbered { counter-reset: step; }
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 7px 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14.5px;
+  line-height: 1.4;
+}
+.check-item:active { background: var(--cream); }
+.check-list.numbered .check-item::before {
+  counter-increment: step;
+  content: counter(step) ".";
+  font-weight: 700;
+  color: var(--burgundy);
+  flex-shrink: 0;
+  min-width: 18px;
+}
+.check-box {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--gold);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: white;
+  background: transparent;
+  margin-top: 1px;
+}
+.check-item.checked .check-box { background: var(--gold); }
+.check-item.checked .check-text { color: var(--gray); text-decoration: line-through; }
+
+.plain-list { padding-left: 20px; margin: 6px 0; font-size: 13.5px; }
+
+.note-box, .nutrition-box {
+  background: var(--cream);
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-top: 18px;
+  font-size: 13.5px;
+}
+.nutrition-box { background: white; border-color: var(--burgundy); }
+.note-box p { margin: 4px 0; }
+
+.reset-link {
+  display: inline-block;
+  margin-top: 20px;
+  background: none;
+  border: none;
+  color: var(--gray);
+  font-size: 12.5px;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 6px 0;
+}
+
+.empty-msg { color: var(--gray); font-size: 14px; margin-top: 20px; }
+
+.grocery-section { margin-bottom: 18px; }
+.grocery-section h3 a { color: var(--burgundy); text-decoration: none; }
+
+.foot-note {
+  text-align: center;
+  font-size: 11.5px;
+  color: var(--gray);
+  padding: 10px 16px 30px;
+}
