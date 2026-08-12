@@ -525,7 +525,7 @@ const RECIPES = [
       ]},
     ],
     notes: [
-      "Temperature is key: ideal growing temperature is 68–75°F. A cold kitchen may take longer — consider a warmer spot or lukewarm (85°F) water.",
+      "Temperature is key: ideal growing temperature is 68–75\°F. A cold kitchen may take longer — consider a warmer spot or lukewarm (85°F) water.",
       "Use non-chlorinated water: chlorine can hinder yeast and bacteria growth. Use filtered or spring water, or dechlorinate tap water by boiling and cooling it, or letting it sit out uncovered for a day.",
       "Consistency helps: try to feed your starter at the same time each day.",
       "Patience is essential: starters vary in how quickly they develop. Don't rush it with too much warmth, or you can exhaust the yeast.",
@@ -599,6 +599,48 @@ const RECIPES = [
       "Pickle Crisp (calcium chloride) helps keep pickles crunchy; measuring it directly into each jar ensures every jar gets the right amount.",
       "Always use new lids each time — rings can be reused, but the seal depends on a fresh lid.",
       "The brine should taste tart-sweet, not syrupy — this recipe uses noticeably less sugar than many bread and butter pickle recipes.",
+    ],
+  },
+  {
+    id: "dream-biscuits",
+    title: "Dream Biscuits (Drop Cream Biscuits)",
+    category: "breakfast",
+    source: "Source: America's Test Kitchen",
+    meta: { Prep: "15 minutes", Bake: "10–12 minutes", Makes: "10 biscuits" },
+    ingredients: [
+      { group: "Dry Ingredients", items: [
+        "3 cups all-purpose flour",
+        "4 teaspoons sugar",
+        "1 tablespoon baking powder",
+        "1/4 teaspoon baking soda",
+        "1 1/4 teaspoons salt",
+      ]},
+      { group: "Wet Ingredients", items: [
+        "2 cups heavy cream (about 36% fat)",
+      ]},
+      { group: "For Serving", items: [
+        "2 tablespoons unsalted butter, melted",
+      ]},
+    ],
+    instructions: [
+      { group: "Mix the Dough", items: [
+        "Whisk together the flour, sugar, baking powder, baking soda, and salt in a large bowl until combined.",
+        "Heat the heavy cream in the microwave to about 95–100°F, roughly 60-90 seconds. This melts the butterfat suspended in the cream and thins it out enough to make a scoopable dough — don't skip this step, cold cream makes a dough that's too stiff and won't spread properly in the oven.",
+        "Stir the warm cream into the dry ingredients with a spatula until completely smooth. Unlike most biscuit doughs, this one can be mixed thoroughly without worrying about overworking the gluten — the high fat content coats the flour and keeps the crumb tender.",
+      ]},
+      { group: "Portion and Bake", items: [
+        "Preheat the oven to 450°F before you begin mixing — it needs the most lead time of anything in this recipe.",
+        "Lightly spray a 1/3-cup measure with cooking spray. Scoop the dough and drop it straight down onto a baking sheet to form a neat mound. Re-spray the measure as needed if the dough starts to stick. You should get about 10 biscuits.",
+        "If any biscuits fall over or look uneven, reshape them with your fingers — the dough won't stick since it's coated in spray.",
+        "Bake on the upper-middle rack for 10-12 minutes, rotating the pan halfway through, until golden brown on top.",
+        "Brush the warm biscuits with the melted butter for flavor and a bit of shine.",
+        "Let cool about 5 minutes before serving warm.",
+      ]},
+    ],
+    notes: [
+      "The key twist: warming the cream to 95–100°F melts its butterfat so the dough turns soft and scoopable. The same recipe made with cold cream turns dry and stiff instead of smooth.",
+      "These come out tender and not dry inside, with good crust flavor from the cream's fat content, even though it's made with regular all-purpose flour.",
+      "Great alongside soup or chili, or split and served with jam.",
     ],
   },
 ];
