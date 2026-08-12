@@ -482,4 +482,123 @@ const RECIPES = [
     ],
     notes: ["Cover leftovers tightly. Store in refrigerator up to 5 days."],
   },
+  {
+    id: "sourdough-starter",
+    title: "Sourdough Starter",
+    category: "breakfast",
+    source: "Source: Natasha Kravchuk | NatashasKitchen.com",
+    meta: { "Active Time": "About 10 minutes a day", "Total Time": "6–7 days", Makes: "1 starter" },
+    ingredients: [
+      { group: null, items: [
+        "100 g whole grain rye flour or whole wheat flour, preferably organic (100g = 3/4 cup)",
+        "500 g all-purpose flour — preferably organic, unbleached — used to maintain and feed the starter",
+        "1 qt filtered or spring water, room temperature",
+      ]},
+    ],
+    instructions: [
+      { group: "Day 1: Make Your Starter", items: [
+        "Record the weight of your jar in grams before you add anything, and label the jar with your starting date for easier tracking.",
+        "Add 100 grams (3/4 cup) whole wheat or rye flour and 100 grams (1/2 cup) water. Stir together thoroughly with a fork (it will be very thick), scrape down the sides with a spatula. Cover with a loose-fitting lid and let it rest at room temperature for 24 hours. Put a rubber band around the jar to mark the growth of your starter.",
+      ]},
+      { group: "Day 2: No Changes Noted", items: [
+        "Likely nothing is happening — you might see tiny bubbles, or it will look the same. Let it rest for another 24 hours.",
+      ]},
+      { group: "Day 3: Visible Growth and Bubbles", items: [
+        "Remove and discard half of the starter (in the trash, not the sink, so it doesn't affect the plumbing) — you should have 100 grams (1/2 cup) left. Add 100 grams (3/4 cup) all-purpose flour and 100 grams (1/2 cup) room-temp water. Stir thoroughly, scrape down the sides, cover loosely, and rest at room temperature for 24 hours.",
+      ]},
+      { group: "Day 4: A Lot of Bubbles", items: [
+        "Remove and discard all but 100 grams of starter. Add 100 grams (3/4 cup) all-purpose flour and 100 grams (1/2 cup) room-temperature water. Stir thoroughly, scrape down the sides, cover loosely, and rest 24 hours.",
+        "If your starter seems to slow down for no apparent reason on day 4, just keep feeding it — it will turn back around.",
+      ]},
+      { group: "Day 5: Visible Growth and Bubbles", items: [
+        "Remove and discard all but 100 grams of starter. Add 100 grams (3/4 cup) all-purpose flour and 100 grams (1/2 cup) room-temperature water. Stir thoroughly, scrape down the sides, cover loosely, and rest 24 hours.",
+      ]},
+      { group: "Day 6–7: Starter May Double or More", items: [
+        "Remove and discard all but 100 grams of starter. Add 100 grams (3/4 cup) all-purpose flour and 100 grams (1/2 cup) room-temperature water. Stir thoroughly, scrape down the sides, cover loosely, and rest until more than doubled in volume.",
+      ]},
+      { group: "Testing Your Starter", items: [
+        "When ready, it should peak between 4-6 hours and start to recede after 12 hours. It should smell sour and pleasant. Drop a dollop into a bowl of water — if it floats, it's healthy enough to use. If it isn't ready by day 7, keep feeding it on this same schedule; it may just need more time depending on your flour and environment.",
+      ]},
+      { group: "How to Maintain Your Starter", items: [
+        "Frequent bakers: store at room temperature. Discard and feed every 24 hours. To use, feed and wait for the starter to reach its peak (4-6 hours), then remove the portion needed for the recipe.",
+        "Casual bakers (weekly): store in the fridge. Once a week, discard and feed, then rest at room temperature 1-2 hours before returning to the fridge. To bake, remove from the fridge, bring to room temperature overnight, discard and feed, then remove the portion needed once it peaks — feed and refrigerate the rest.",
+      ]},
+    ],
+    notes: [
+      "Temperature is key: ideal growing temperature is 68–75°F. A cold kitchen may take longer — consider a warmer spot or lukewarm (85°F) water.",
+      "Use non-chlorinated water: chlorine can hinder yeast and bacteria growth. Use filtered or spring water, or dechlorinate tap water by boiling and cooling it, or letting it sit out uncovered for a day.",
+      "Consistency helps: try to feed your starter at the same time each day.",
+      "Patience is essential: starters vary in how quickly they develop. Don't rush it with too much warmth, or you can exhaust the yeast.",
+    ],
+  },
+  {
+    id: "bread-butter-pickles",
+    title: "Bread and Butter Pickles (Canning Method)",
+    category: "sides",
+    source: "Source: America's Test Kitchen",
+    meta: { Prep: "30 minutes + 3 hours salting", "Process Time": "30 minutes", Total: "About 2 days (mostly hands-off)", Makes: "4 pint jars" },
+    ingredients: [
+      { group: "Vegetables", items: [
+        "2 lbs small Kirby pickling cucumbers, ends trimmed, sliced into 1/4-inch rounds",
+        "1 onion, quartered and thinly sliced",
+        "1 red bell pepper, seeds and ribs removed, cut into thin matchsticks",
+        "2 tablespoons canning and pickling salt (or plain kosher salt — avoid iodized salt or anti-caking agents)",
+      ]},
+      { group: "Brine", items: [
+        "3 cups apple cider vinegar",
+        "2 cups granulated white sugar",
+        "1 cup water",
+        "1 tablespoon yellow mustard seeds",
+        "3/4 teaspoon turmeric",
+        "1/2 teaspoon celery seeds",
+        "1/4 teaspoon ground cloves",
+      ]},
+      { group: "For Canning", items: [
+        "4 pint-size canning jars with new lids and rings",
+        "1/8 teaspoon Pickle Crisp (calcium chloride) per jar",
+      ]},
+    ],
+    instructions: [
+      { group: "Prep the Vegetables", items: [
+        "Trim about 1/16 inch off both ends of each cucumber (this removes the blossom end, which contains an enzyme that softens pickles over time). Slice into 1/4-inch rounds.",
+        "Quarter the onion and slice thin. Add to a large bowl with the cucumbers.",
+        "Cut the top and bottom off the bell pepper, slice down the sides to leave the seeds and ribs behind, then cut into thin matchsticks. Add to the bowl.",
+        "Sprinkle in the salt and mix in with your hands. Cover and refrigerate about 3 hours to draw out excess moisture.",
+      ]},
+      { group: "Prep the Jars", items: [
+        "Fit a rack in the bottom of a large canning pot so the jars don't sit directly on the bottom (they can crack when the water boils). Add the 4 jars and fill the pot with water to cover.",
+        "Bring to a simmer over medium-high heat, then turn off the heat, cover, and let the jars sit in the warm water until ready to fill.",
+      ]},
+      { group: "Make the Brine", items: [
+        "Combine the apple cider vinegar, sugar, and water in a saucepan.",
+        "Add the mustard seeds, turmeric, celery seeds, and ground cloves.",
+        "Bring to a boil over medium-high heat, then cover and set aside to stay warm.",
+      ]},
+      { group: "Fill and Seal the Jars", items: [
+        "Drain the salted vegetables in a colander — don't rinse, the salt stays in for seasoning. Shake well, then pat dry with paper towels to remove surface moisture.",
+        "Remove the warm jars from the water with a jar lifter, drain, and turn upside down briefly on a towel to dry.",
+        "Add 1/8 teaspoon Pickle Crisp to the bottom of each jar.",
+        "Pack the vegetables evenly into the jars (a canning funnel helps).",
+        "Bring the brine back to a boil, then ladle it over the vegetables in each jar, leaving about 1/2 inch of headspace.",
+        "Run a skewer around the inside of each jar to dislodge trapped air bubbles, then top off the brine back to about 1/2 inch headspace (the first ridge on the jar).",
+        "Wipe the rims clean, then add a new lid and a ring turned just \"fingertip tight\" — tight enough to seal, loose enough to let air escape during processing.",
+      ]},
+      { group: "Process the Jars", items: [
+        "Make sure the water in the canning pot is still warm (120–140°F), then use a jar lifter to lower the filled jars back into the pot. Make sure there's about an inch of water covering them.",
+        "Bring the water to 185°F and process for 30 minutes at that temperature — keeping it between 180–185°F (below a full boil) is what keeps the pickles crisp instead of mushy, since pectin starts breaking down above 185°F.",
+        "Remove the jars and let them cool undisturbed for 24 hours.",
+      ]},
+      { group: "Check the Seal & Store", items: [
+        "After 24 hours, remove the ring and press the center of the lid — it should feel tight and slightly indented, meaning it formed a good vacuum seal.",
+        "Store sealed jars in a cool, dark place. Refrigerate after opening.",
+      ]},
+    ],
+    notes: [
+      "Use small, firm Kirby cucumbers for the best crunch — larger cucumbers have bigger seeds that can separate and cause the cucumber to fall apart during pickling. Fresher cucumbers make crisper pickles.",
+      "Use canning and pickling salt or plain kosher salt — avoid iodized salt or salt with anti-caking agents, which can cloud the brine.",
+      "Pickle Crisp (calcium chloride) helps keep pickles crunchy; measuring it directly into each jar ensures every jar gets the right amount.",
+      "Always use new lids each time — rings can be reused, but the seal depends on a fresh lid.",
+      "The brine should taste tart-sweet, not syrupy — this recipe uses noticeably less sugar than many bread and butter pickle recipes.",
+    ],
+  },
 ];
