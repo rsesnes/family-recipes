@@ -643,4 +643,79 @@ const RECIPES = [
       "Great alongside soup or chili, or split and served with jam.",
     ],
   },
+  {
+    id: "sourdough-focaccia",
+    title: "Simple Sourdough Focaccia",
+    category: "breakfast",
+    source: "Source: Alexandra Stafford | AlexandraCooks.com",
+    meta: { Prep: "25 minutes (plus rises)", Rise: "8–24 hours total", Bake: "25 minutes", Makes: "1 loaf" },
+    ingredients: [
+      { group: null, items: [
+        "50–100 g (1/4 to 1/2 cup) active sourdough starter (use 50g in summer, 100g in winter)",
+        "10 g (about 2 1/2 teaspoons) kosher salt",
+        "430–440 g water (1 3/4 cups to 1 3/4 cups + 2 tablespoons), room temperature",
+        "512 g (about 4 cups) bread flour",
+        "3 tablespoons extra-virgin olive oil, divided, plus more for drizzling",
+        "Flaky sea salt, such as Maldon, for topping",
+      ]},
+    ],
+    instructions: [
+      { group: "Mix and First Rise", items: [
+        "Place the starter, salt, and water in a large bowl. Stir with a spatula to combine — it doesn't have to be uniformly mixed. Add the flour and mix again until completely incorporated.",
+        "If time permits, perform one \"fold\" 30 minutes after mixing: reach into the bowl, pull the dough up and into the center, turn the bowl a quarter turn, and repeat 8 to 10 times.",
+        "Drizzle with a splash of olive oil and rub to coat. Cover the bowl and let rise at room temperature (70°F) for 4 to 18 hours, until nearly doubled — in summer this takes about 4-6 hours, in winter 12-18 hours. Rely on visual doubling rather than the clock; a straight-sided container makes this easier to judge.",
+      ]},
+      { group: "Shape and Second Rise", items: [
+        "Pour 2 tablespoons of olive oil into a 9x13-inch pan.",
+        "Drizzle the dough with 1 tablespoon olive oil. Gently deflate it and release it from the sides of the bowl, then scoop it into the center of the oiled pan. Fold the dough envelope-style (top to bottom, side to side) into a rough rectangle, and flip so the seam side is down.",
+        "Rub the top with oil and leave uncovered for 4 to 6 hours, until puffy and nearly doubled.",
+      ]},
+      { group: "Bake", items: [
+        "Heat oven to 425°F. Lightly oil your hands and use all ten fingers to press dimples into the dough, stretching it to nearly fill the pan.",
+        "Sprinkle generously with flaky sea salt.",
+        "Bake about 25 minutes, until golden all around. Cool on a rack at least 20 minutes before slicing.",
+      ]},
+    ],
+    notes: [
+      "Use 50g starter in summer (faster rise, check every couple hours); use 100g in winter and plan for a longer first rise.",
+      "Chlorine can slow sourdough — let tap water sit out at room temperature for a day, or use filtered/spring water.",
+      "If your kitchen is humid, start with the lower end of the water range (430g); all-purpose flour also needs slightly less water than bread flour.",
+      "If the first rise goes a bit past double, don't worry — the focaccia will still turn out light and delicious.",
+    ],
+  },
+  {
+    id: "coconut-custard-pie",
+    title: "Coconut Custard Pie",
+    category: "desserts",
+    source: "Source: Allrecipes, submitted by Lesley (adapted)",
+    meta: { Prep: "10 minutes", Cook: "40–50 minutes", Serves: "8", Yield: "1 (9-inch) pie" },
+    ingredients: [
+      { group: null, items: [
+        "3/4 cup white sugar",
+        "1/2 cup butter",
+        "2 large eggs",
+        "2 tablespoons all-purpose flour",
+        "1 cup milk",
+        "1 cup flaked coconut",
+        "1 teaspoon vanilla extract",
+        "1/2 teaspoon ground cinnamon",
+        "1/8 teaspoon ground nutmeg, plus more for dusting",
+        "1 (9-inch) unbaked pie crust",
+        "1 tablespoon flaked coconut, for topping",
+      ]},
+    ],
+    instructions: [
+      { group: null, items: [
+        "Gather all ingredients. Preheat the oven to 350°F (175°C).",
+        "Beat together the sugar, butter, and eggs in a large bowl with an electric mixer on low speed.",
+        "Blend in the flour. Mix in the milk, 1/2 cup at a time. Add the coconut flakes, vanilla, cinnamon, and nutmeg; mix well.",
+        "Pour the filling into the unbaked pie crust. Sprinkle the top with the remaining 1 tablespoon of coconut flakes.",
+        "Bake until the filling is set and the coconut is toasted, 40 to 50 minutes.",
+        "Cool before slicing. Serve with whipped cream and a dusting of nutmeg.",
+      ]},
+    ],
+    notes: [
+      "Adapted from the original recipe: sugar reduced from 1 1/2 cups to 3/4 cup, with 1/2 teaspoon cinnamon and 1/8 teaspoon nutmeg added to the filling for a warmer, less sweet flavor.",
+    ],
+  },
 ];
